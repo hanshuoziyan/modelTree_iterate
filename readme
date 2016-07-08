@@ -1,0 +1,6 @@
+treeFile.cpp是生成模型树以及给出数据，得到叶结点的数据。
+allReduce,bcast,reduce是treeFile程序运行结果存储。其中第一列代表节点类型（叶节点、非叶节点），对于叶节点，2，3，4列代表三个参数（a+b*并行度+c*数据量）。对于非叶节点，第二列代表划分属性，第三列代表分割值。第4，5列代表左右叶子节点。
+treeFile--get the predict value, run the program by (a.out reduce reduce_datafile)
+
+reduce is the model learned by pythonLearn/regressionTree.py
+reduce_datafile is the train data
